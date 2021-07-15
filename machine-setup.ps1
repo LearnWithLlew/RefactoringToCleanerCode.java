@@ -1,5 +1,5 @@
 # To run this script directly, open PowerShell and run this command:
-#     PS> Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/LearnWithLlew/RefactoringToCleanerCode.net/master/machine-setup.ps1 | Invoke-Expression
+#     PS> Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/LearnWithLlew/RefactoringToCleanerCode.java/master/machine-setup.ps1 | Invoke-Expression
 
 #Requires -RunAsAdministrator
 
