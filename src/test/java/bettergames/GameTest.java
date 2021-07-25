@@ -3,6 +3,7 @@ package bettergames;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
 
+@ExtendWith(TestCommitRevertExtension.class)
 public class GameTest {
 
     @Test
