@@ -1,7 +1,9 @@
 package bettergames;
 
+import com.github.larseckart.tcr.TestCommitRevertExtension;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(TestCommitRevertExtension.class)
 public class GameTest {
