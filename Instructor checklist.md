@@ -24,15 +24,8 @@
 - [ ] Intellij 
   - [ ] Settings > Appearance & Behavior > Appearance > Theme: IntelliJ Light
   - [ ] Settings > Editor > Font > Size : 18
-  - [ ] Settings > Plugins > Marketplace > Infinitest : install  & restart
-- [ ] Open Solution, build, run tests, turn off NCrunch
-	- May need to add real NuGet feed (https://api.nuget.org/v3/index.json) and remove offline packages feed
-- [ ] Check keyboard shortcuts in Visual Studio
-    - [ ] Ctrl-Shift-R
-    - [ ] Ctrl-U, Ctrl-L
 - [ ] Get slides onto machine via Office 365
 - [ ] Make a branch
-- [ ] Enable `Show procedure line separators`
 - [ ] Ensure Typora installed
 
 # 20 minutes before
