@@ -5,7 +5,7 @@ import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(TestCommitRevertExtension.class)
+@ExtendWith(RevertOnFailure.class)
 public class GameTest {
 
     @Test
