@@ -2,13 +2,7 @@
 
 * Validate the environment
     * [ ] Run all tests (`Ctrl-U, L`)
-
-# Run tests automatically
-
-* Open InfiniTest menu (`Alt-U`)
-    * [ ] Enable InfiniTest
-    * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
-
+    
 # Read this:
 
 ## Scenario
