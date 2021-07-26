@@ -2,6 +2,8 @@ package bettergames;
 
 import com.github.larseckart.tcr.TestCommitRevertExtension;
 import org.approvaltests.combinations.CombinationApprovals;
+import org.approvaltests.core.Options;
+import org.approvaltests.reporters.intellij.IntelliJReporter;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -15,7 +17,8 @@ public class GameTest {
 
         CombinationApprovals.verifyAllCombinations(
                 BigDiceGame::calculateScore,
-                scoringTypes, dice, dice, dice, dice, dice
+                scoringTypes, dice, dice, dice, dice, dice,
+                new Options(new IntelliJReporter())
         );
     }
 }
