@@ -32,6 +32,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     3. Evaluate it at the caller (ignore the body)
     4. Fix or revert and try again
     5. Commit
+    6. Repeat until method is small
 
 - [ ] ## Activity 2: Move methods onto new classes
 
@@ -39,6 +40,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     2. Move into a better class
     3. Evaluate at caller
     4. Commit (or revert)
+    5. Repeat until everything is in it's place
 
 - [ ] ## Activity 3: Clean up the main method
 
@@ -46,6 +48,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     2. Remove redundant `else` in method, commit
     3. Extract condition to a method with a Nonsense name, commit
     4. Move the method to the corresponding class, commit
+    5. Repeat util strong duplication
 
 - [ ] ## Activity 4: Remove duplication
 
@@ -103,15 +106,15 @@ SOMETYPE somevar = ...;
 Becomes:
 
 ```c#
-foreach (SOMETYPE somevar in new SOMETYPE[]{ ... })
+for (SOMETYPE somevar : new SOMETYPE[]{ ... })
 {
     // do something with somevar
 }
 ```
 
 1. Add curly braces (`{}`) around the body
-2. Prefix with `foreach (`
-3. Replace `=` with `in new SOMETYPE[]{`
+2. Prefix with `for (`
+3. Replace `=` with `: new SOMETYPE[]{`
 4. Replace `;` with `})`
 
 
