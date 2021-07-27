@@ -4,7 +4,10 @@
 
 You can grab the slides here: https://github.com/LearnWithLlew/RefactoringToCleanerCode.Slides
 
-Remember to print out the [homework](https://github.com/LearnWithLlew/RefactoringToCleanerCode.Slides/raw/main/Homework%20Printouts.pdf).
+Remember to print out:
+
+* [The Keyboard shortcuts](https://github.com/LearnWithLlew/RefactoringToCleanerCode.java/blob/main/Keyboard%20Shortcuts.pdf)
+* [homework](https://github.com/LearnWithLlew/RefactoringToCleanerCode.Slides/raw/main/Homework%20Printouts.pdf).
 
 # Setting up a machine
 
