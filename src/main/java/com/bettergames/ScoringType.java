@@ -1,4 +1,4 @@
-package bettergames;
+package com.bettergames;
 
 public enum ScoringType {
     Pair,

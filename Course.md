@@ -1,8 +1,8 @@
 # Run tests manually
 
 * Validate the environment
-    * [ ] Run all tests (`Ctrl-U, L`)
-    
+    * [ ] Run all tests (`Shift-F10`)
+
 # Read this:
 
 ## Scenario
@@ -32,7 +32,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     3. Evaluate it at the caller (ignore the body)
     4. Fix or revert and try again
     5. Commit
-    
+
 - [ ] ## Activity 2: Move methods onto new classes
 
     1. Pick a method
@@ -42,12 +42,12 @@ We are looking at a large method that we don't understand, and we want to clean 
 
 - [ ] ## Activity 3: Clean up the main method
 
-	1. Convert `switch` to `if`/`else`, commit
-	2. Remove redundant `else` in method, commit
-	3. Extract condition to a method with a Nonsense name, commit
-	4. Move the method to the corresponding class, commit
-	
- - [ ] ## Activity 4: Remove duplication
+    1. Convert `switch` to `if`/`else`, commit
+    2. Remove redundant `else` in method, commit
+    3. Extract condition to a method with a Nonsense name, commit
+    4. Move the method to the corresponding class, commit
+
+- [ ] ## Activity 4: Remove duplication
 
     1. Make similar things identical
     2. Surround each `if` with a block
@@ -76,7 +76,7 @@ We are looking at a large method that we don't understand, and we want to clean 
 5. Does the right thing -> Intent
 
 6. Intent -> Domain Abstraction
- 
+
 ## Refactoring Combo: Provable Undo
 
 **Insight:** A proven-correct refactoring means that the resulting code is the same as the beginning code. Therefore undoing a proven-correct refactoring is also a proven-correct refactoring.
@@ -119,13 +119,13 @@ foreach (SOMETYPE somevar in new SOMETYPE[]{ ... })
 
 * Redo today’s coding exercises on your own computer
 
-  * Start from the code on the [`main` branch](https://github.com/LearnWithLlew/RefactoringToCleanerCode.net)
-  * If you want to see the code we wrote together, check the [other branches](https://github.com/LearnWithLlew/RefactoringToCleanerCode.net/branches)
-  * Pay attention to:
-    * how often you're able to execute a single refactoring - more is better
-    * how many times you are able to pull out a paragraph into a new method
+    * Start from the code on the [`main` branch](https://github.com/LearnWithLlew/RefactoringToCleanerCode.net)
+    * If you want to see the code we wrote together, check the [other branches](https://github.com/LearnWithLlew/RefactoringToCleanerCode.net/branches)
+    * Pay attention to:
+        * how often you're able to execute a single refactoring - more is better
+        * how many times you are able to pull out a paragraph into a new method
 * Print out this sheet and keep it on your desk. Over the next week as you're doing your normal work:
-  * note when you were able to improve the code with a single, committed refactoring
-  * note when you extract a paragraph
-  * Make a TODO list of code you wish was better but couldn't improve at this time
+    * note when you were able to improve the code with a single, committed refactoring
+    * note when you extract a paragraph
+    * Make a TODO list of code you wish was better but couldn't improve at this time
 

@@ -1,4 +1,4 @@
-package bettergames;
+package com.bettergames;
 
 
         import java.io.BufferedReader;

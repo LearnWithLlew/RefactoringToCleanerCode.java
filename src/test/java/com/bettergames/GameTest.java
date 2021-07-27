@@ -1,6 +1,5 @@
-package bettergames;
+package com.bettergames;
 
-import com.github.larseckart.tcr.TestCommitRevertExtension;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.core.Options;
 import org.approvaltests.reporters.intellij.IntelliJReporter;
