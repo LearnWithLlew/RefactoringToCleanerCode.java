@@ -23,7 +23,7 @@ public class BigDiceGame
             }
         }
         {
-            if (FiveOfAKindCalculator.isScorable(scoringType)) {
+            if (new FiveOfAKindCalculator().isScorable(scoringType)) {
                 return FiveOfAKindCalculator.calculateScore(die1, die2, die3, die4, die5);
             }
         }
