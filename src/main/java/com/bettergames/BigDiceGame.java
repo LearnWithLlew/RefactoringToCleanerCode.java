@@ -10,17 +10,12 @@ public class BigDiceGame
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            for(ScoreCalculator calculator : List.of(new PairCalculator())){
+            for(ScoreCalculator calculator : List.of(new PairCalculator(), new TwoPairCalculator())){
             if (calculator.isScorable(scoringType)) {
                 return calculator.calculateScore(die1, die2, die3, die4, die5);
             }}
         }
-        {
-            ScoreCalculator calculator = new TwoPairCalculator();
-            if (calculator.isScorable(scoringType)) {
-                return calculator.calculateScore(die1, die2, die3, die4, die5);
-            }
-        }
+
         {
             ScoreCalculator calculator = new FullHouseCalculator();
             if (calculator.isScorable(scoringType)) {
