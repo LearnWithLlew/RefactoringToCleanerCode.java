@@ -13,7 +13,7 @@ public class BigDiceGame
         if (isaBoolean1(scoringType)) {
             return TwoPairCalculator.doAnotherThing(die1, die2, die3, die4, die5);
         }
-        if (scoringType == ScoringType.FullHouse) {
+        if (isaBoolean2(scoringType)) {
             return FullHouseCalculator.doSomethingOnCodingFestival(die1, die2, die3, die4, die5);
         }
         if (scoringType == ScoringType.FiveOfAKind) {
@@ -21,6 +21,10 @@ public class BigDiceGame
         }
 
         return 0;
+    }
+
+    private static boolean isaBoolean2(ScoringType scoringType) {
+        return scoringType == ScoringType.FullHouse;
     }
 
     private static boolean isaBoolean1(ScoringType scoringType) {
