@@ -11,7 +11,7 @@ public class BigDiceGame
             return PairCalculator.calculateScore(die1, die2, die3, die4, die5);
         }
         if (TwoPairCalculator.isaBoolean1(scoringType)) {
-            return TwoPairCalculator.doAnotherThing(die1, die2, die3, die4, die5);
+            return TwoPairCalculator.calculateScore(die1, die2, die3, die4, die5);
         }
         if (FullHouseCalculator.isaBoolean2(scoringType)) {
             return FullHouseCalculator.doSomethingOnCodingFestival(die1, die2, die3, die4, die5);
