@@ -9,7 +9,7 @@ public class BigDiceGame
     {
         {
             if (new PairCalculator().isScorable(scoringType)) {
-                return PairCalculator.calculateScore(die1, die2, die3, die4, die5);
+                return new PairCalculator().calculateScore(die1, die2, die3, die4, die5);
             }
         }
         {
