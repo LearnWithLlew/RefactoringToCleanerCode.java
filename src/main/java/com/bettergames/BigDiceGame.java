@@ -2,10 +2,10 @@ package com.bettergames;
 
 public class BigDiceGame
 {
-    public static int calculateScore(ScoringType st, int die1, int die2, int d3, int dieFour, int fifthDie)
+    public static int calculateScore(ScoringType scoringType, int die1, int die2, int d3, int dieFour, int fifthDie)
     {
         final int bigScore = 50;
-        switch (st)
+        switch (scoringType)
         {
             case Pair:
             {
