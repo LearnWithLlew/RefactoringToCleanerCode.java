@@ -26,7 +26,7 @@ public class BigDiceGame
             }
         }
         {
-            FiveOfAKindCalculator calculator = new FiveOfAKindCalculator();
+            ScoreCalculator calculator = new FiveOfAKindCalculator();
             if (calculator.isScorable(scoringType)) {
                 return calculator.calculateScore(die1, die2, die3, die4, die5);
             }
