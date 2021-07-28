@@ -16,11 +16,15 @@ public class BigDiceGame
         if (isaBoolean2(scoringType)) {
             return FullHouseCalculator.doSomethingOnCodingFestival(die1, die2, die3, die4, die5);
         }
-        if (scoringType == ScoringType.FiveOfAKind) {
+        if (isaBoolean3(scoringType)) {
             return FiveOfAKindCalculator.doSomeNextThing5(die1, die2, die3, die4, die5);
         }
 
         return 0;
+    }
+
+    private static boolean isaBoolean3(ScoringType scoringType) {
+        return scoringType == ScoringType.FiveOfAKind;
     }
 
     private static boolean isaBoolean2(ScoringType scoringType) {
