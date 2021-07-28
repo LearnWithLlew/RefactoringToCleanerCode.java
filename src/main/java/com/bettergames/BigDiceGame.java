@@ -9,11 +9,14 @@ public class BigDiceGame
     {
         if (scoringType == ScoringType.Pair) {
             return PairCalculator.doSomething(die1, die2, die3, die4, die5);
-        } else if (scoringType == ScoringType.TwoPair) {
+        }
+        if (scoringType == ScoringType.TwoPair) {
             return TwoPairCalculator.doAnotherThing(die1, die2, die3, die4, die5);
-        } else if (scoringType == ScoringType.FullHouse) {
+        }
+        if (scoringType == ScoringType.FullHouse) {
             return FullHouseCalculator.doSomethingOnCodingFestival(die1, die2, die3, die4, die5);
-        } else if (scoringType == ScoringType.FiveOfAKind) {
+        }
+        if (scoringType == ScoringType.FiveOfAKind) {
             return FiveOfAKindCalculator.doSomeNextThing5(die1, die2, die3, die4, die5);
         }
 
