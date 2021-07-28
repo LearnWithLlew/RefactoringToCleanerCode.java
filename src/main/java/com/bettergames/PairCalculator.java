@@ -20,4 +20,8 @@ public class PairCalculator {
 
         return 0;
     }
+
+    public static boolean isaBoolean(ScoringType scoringType) {
+        return scoringType == ScoringType.Pair;
+    }
 }

@@ -7,7 +7,7 @@ public class BigDiceGame
 
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
-        if (isaBoolean(scoringType)) {
+        if (PairCalculator.isaBoolean(scoringType)) {
             return PairCalculator.doSomething(die1, die2, die3, die4, die5);
         }
         if (isaBoolean1(scoringType)) {
@@ -33,10 +33,6 @@ public class BigDiceGame
 
     private static boolean isaBoolean1(ScoringType scoringType) {
         return scoringType == ScoringType.TwoPair;
-    }
-
-    private static boolean isaBoolean(ScoringType scoringType) {
-        return scoringType == ScoringType.Pair;
     }
 
 }
