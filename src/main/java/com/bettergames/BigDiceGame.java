@@ -13,7 +13,7 @@ public class BigDiceGame
             }
         }
         {
-            if (TwoPairCalculator.isScorable(scoringType)) {
+            if (new TwoPairCalculator().isScorable(scoringType)) {
                 return TwoPairCalculator.calculateScore(die1, die2, die3, die4, die5);
             }
         }
