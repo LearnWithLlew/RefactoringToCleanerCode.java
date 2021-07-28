@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class FullHouseCalculator {
-    public static int doSomethingOnCodingFestival(int die1, int die2, int die3, int die4, int die5) {
+    public static int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         int[] tallies;
         var _2 = false;
         int i;
