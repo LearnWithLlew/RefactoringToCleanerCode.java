@@ -9,13 +9,13 @@ public class BigDiceGame
 
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
-        for(ScoreCalculator calculator : List.of(new PairCalculator(), new TwoPairCalculator(), new FullHouseCalculator(), new FiveOfAKindCalculator())){
-        if (calculator.isScorable(scoringType)) {
-            return calculator.calculateScore(die1, die2, die3, die4, die5);
-        }}
+        return getScoreCalculators().stream().filter(calculator -> calculator.isScorable(scoringType)).findFirst().map(calculator -> calculator.calculateScore(die1, die2, die3, die4, die5)).orElse(0);
 
 
-        return 0;
+    }
+
+    private static List<ScoreCalculator> getScoreCalculators() {
+        return List.of(new PairCalculator(), new TwoPairCalculator(), new FullHouseCalculator(), new FiveOfAKindCalculator());
     }
 
 }
