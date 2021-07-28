@@ -21,7 +21,7 @@ public class PairCalculator {
         return 0;
     }
 
-    public static boolean isaBoolean(ScoringType scoringType) {
+    public static boolean isScorable(ScoringType scoringType) {
         return scoringType == ScoringType.Pair;
     }
 }
