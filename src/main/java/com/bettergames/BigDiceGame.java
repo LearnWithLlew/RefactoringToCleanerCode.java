@@ -20,7 +20,7 @@ public class BigDiceGame
             }
         }
         {
-            FullHouseCalculator calculator = new FullHouseCalculator();
+            ScoreCalculator calculator = new FullHouseCalculator();
             if (calculator.isScorable(scoringType)) {
                 return calculator.calculateScore(die1, die2, die3, die4, die5);
             }
