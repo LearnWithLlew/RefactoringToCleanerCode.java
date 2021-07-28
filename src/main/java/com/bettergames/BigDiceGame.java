@@ -2,9 +2,11 @@ package com.bettergames;
 
 public class BigDiceGame
 {
+
+    public static final int BIG_SCORE = 50;
+
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
-        final int bigScore = 50;
         switch (scoringType)
         {
             case Pair:
@@ -29,7 +31,7 @@ public class BigDiceGame
                 {
                     if (counts2[i1] == 5)
                     {
-                        return bigScore;
+                        return BIG_SCORE;
                     }
                 }
 
