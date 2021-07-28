@@ -18,7 +18,7 @@ public class BigDiceGame
             }
         }
         {
-            if (FullHouseCalculator.isScorable(scoringType)) {
+            if (new FullHouseCalculator().isScorable(scoringType)) {
                 return FullHouseCalculator.calculateScore(die1, die2, die3, die4, die5);
             }
         }

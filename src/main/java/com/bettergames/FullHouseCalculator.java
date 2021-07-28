@@ -42,7 +42,7 @@ public class FullHouseCalculator {
         return 0;
     }
 
-    public static boolean isScorable(ScoringType scoringType) {
+    public boolean isScorable(ScoringType scoringType) {
         return scoringType == ScoringType.FullHouse;
     }
 }
