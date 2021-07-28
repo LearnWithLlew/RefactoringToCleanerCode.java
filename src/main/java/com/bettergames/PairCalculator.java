@@ -1,6 +1,7 @@
 package com.bettergames;
 
-public class PairCalculator {
+public class PairCalculator implements ScoreCalculator {
+    @Override
     public int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         final int value = 2;
         int[] tallies1;
@@ -21,6 +22,7 @@ public class PairCalculator {
         return 0;
     }
 
+    @Override
     public boolean isScorable(ScoringType scoringType) {
         return scoringType == ScoringType.Pair;
     }
