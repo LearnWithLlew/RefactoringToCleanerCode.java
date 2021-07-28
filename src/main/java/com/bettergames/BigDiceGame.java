@@ -10,7 +10,7 @@ public class BigDiceGame
         if (isaBoolean(scoringType)) {
             return PairCalculator.doSomething(die1, die2, die3, die4, die5);
         }
-        if (scoringType == ScoringType.TwoPair) {
+        if (isaBoolean1(scoringType)) {
             return TwoPairCalculator.doAnotherThing(die1, die2, die3, die4, die5);
         }
         if (scoringType == ScoringType.FullHouse) {
@@ -21,6 +21,10 @@ public class BigDiceGame
         }
 
         return 0;
+    }
+
+    private static boolean isaBoolean1(ScoringType scoringType) {
+        return scoringType == ScoringType.TwoPair;
     }
 
     private static boolean isaBoolean(ScoringType scoringType) {
