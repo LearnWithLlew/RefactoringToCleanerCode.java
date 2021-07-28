@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class PairCalculator {
-    public static int doSomething(int die1, int die2, int die3, int die4, int die5) {
+    public static int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         final int value = 2;
         int[] tallies1;
         tallies1 = new int[6];

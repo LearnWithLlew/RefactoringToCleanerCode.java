@@ -42,7 +42,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     4. Commit (or revert)
     5. Repeat until everything is in it's place
 
-- [ ] ## Activity 3: Clean up the main method
+- [x] ## Activity 3: Clean up the main method
 
     1. Convert `switch` to `if`/`else`, commit
     2. Remove redundant `else` in method, commit
