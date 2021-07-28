@@ -14,7 +14,7 @@ public class BigDiceGame
             }
         }
         {
-            TwoPairCalculator calculator = new TwoPairCalculator();
+            ScoreCalculator calculator = new TwoPairCalculator();
             if (calculator.isScorable(scoringType)) {
                 return calculator.calculateScore(die1, die2, die3, die4, die5);
             }
