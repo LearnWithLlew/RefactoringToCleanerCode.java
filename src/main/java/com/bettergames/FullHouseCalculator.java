@@ -1,6 +1,6 @@
 package com.bettergames;
 
-public class FullHouseCalculator {
+public class FullHouseCalculator implements ScoreCalculator{
     public int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         int[] tallies;
         var _2 = false;
