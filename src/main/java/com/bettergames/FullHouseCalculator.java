@@ -41,4 +41,8 @@ public class FullHouseCalculator {
 
         return 0;
     }
+
+    public static boolean isaBoolean2(ScoringType scoringType) {
+        return scoringType == ScoringType.FullHouse;
+    }
 }
