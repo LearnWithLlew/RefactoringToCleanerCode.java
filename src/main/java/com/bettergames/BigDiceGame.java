@@ -17,7 +17,7 @@ public class BigDiceGame
             return FullHouseCalculator.calculateScore(die1, die2, die3, die4, die5);
         }
         if (FiveOfAKindCalculator.isaBoolean3(scoringType)) {
-            return FiveOfAKindCalculator.doSomeNextThing5(die1, die2, die3, die4, die5);
+            return FiveOfAKindCalculator.calculateScore(die1, die2, die3, die4, die5);
         }
 
         return 0;
