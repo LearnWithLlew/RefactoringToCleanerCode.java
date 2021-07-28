@@ -24,6 +24,10 @@
 - [ ] Intellij 
   - [ ] Settings > Appearance & Behavior > Appearance > Theme: IntelliJ Light
   - [ ] Settings > Editor > Font > Size : 18
+  - [ ] Settings > Plugins > Projector
+  - [ ] Aws > Add Incoming on 8887
+  - [ ] Windows Firewall > Advanced Settings > inbound rules > add > program
+
 - [ ] Get slides onto machine via Office 365
 - [ ] Make a branch
 - [ ] Ensure Typora installed
