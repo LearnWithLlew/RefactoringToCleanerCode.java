@@ -25,7 +25,7 @@ We are looking at a large method that we don't understand, and we want to clean 
 
 # Do this
 
-- [ ] ## Activity 1: Extract Paragraphs to methods
+- [X] ## Activity 1: Extract Paragraphs to methods
 
     1. Identify a paragraph (a `case`)
     2. Extract a method to an Obvious Nonsense name
