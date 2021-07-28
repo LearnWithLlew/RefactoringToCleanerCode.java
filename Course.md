@@ -34,7 +34,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     5. Commit
     6. Repeat until method is small
 
-- [ ] ## Activity 2: Move methods onto new classes
+- [x] ## Activity 2: Move methods onto new classes
 
     1. Pick a method
     2. Move into a better class
