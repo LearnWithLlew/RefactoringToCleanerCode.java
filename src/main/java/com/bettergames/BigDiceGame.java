@@ -23,14 +23,14 @@ public class BigDiceGame
 
             case FiveOfAKind:
             {
-                return blackCurrantJam(die1, die2, die3, die4, die5);
+                return fiveOfAKindScore(die1, die2, die3, die4, die5);
             }
         }
 
         return 0;
     }
 
-    private static int blackCurrantJam(int die1, int die2, int die3, int die4, int die5) {
+    private static int fiveOfAKindScore(int die1, int die2, int die3, int die4, int die5) {
         int[] dice1 = {die1, die2, die3, die4, die5};
         var counts2 = new int[6];
         for (var die : dice1)
