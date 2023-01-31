@@ -23,7 +23,7 @@ public class BigDiceGame
 
             case FiveOfAKind:
             {
-                return FiveOfAKind.fiveOfAKindScore(die1, die2, die3, die4, die5);
+                return new FiveOfAKind().fiveOfAKindScore(die1, die2, die3, die4, die5);
             }
         }
 
