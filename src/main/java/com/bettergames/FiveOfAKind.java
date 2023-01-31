@@ -1,6 +1,7 @@
 package com.bettergames;
 
-public class FiveOfAKind {
+public class FiveOfAKind implements Scorer {
+    @Override
     public int score(int die1, int die2, int die3, int die4, int die5) {
         int[] dice1 = {die1, die2, die3, die4, die5};
         var counts2 = new int[6];
