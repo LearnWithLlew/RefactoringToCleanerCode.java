@@ -18,7 +18,7 @@ public class BigDiceGame
 
             case FullHouse:
             {
-                return grapeJam(die1, die2, die3, die4, die5);
+                return fullHouseScore(die1, die2, die3, die4, die5);
             }
 
             case FiveOfAKind:
@@ -49,7 +49,7 @@ public class BigDiceGame
         return 0;
     }
 
-    private static int grapeJam(int die1, int die2, int die3, int die4, int die5) {
+    private static int fullHouseScore(int die1, int die2, int die3, int die4, int die5) {
         int[] tallies;
         var _2 = false;
         int i;
