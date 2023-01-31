@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class Pair implements Scorer {
-    public static boolean isPair(ScoringType st) {
+    public static boolean isScorable(ScoringType st) {
         return st == ScoringType.Pair;
     }
 
