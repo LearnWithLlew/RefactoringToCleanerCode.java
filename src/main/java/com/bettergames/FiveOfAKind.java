@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class FiveOfAKind implements Scorer {
-    public static boolean isScorable(ScoringType st) {
+    public boolean isScorable(ScoringType st) {
         return st == ScoringType.FiveOfAKind;
     }
 
