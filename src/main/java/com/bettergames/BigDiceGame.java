@@ -5,6 +5,7 @@ public class BigDiceGame {
         Pair pair = new Pair();
         TwoPair twoPair = new TwoPair();
         FullHouse fullHouse = new FullHouse();
+        FiveOfAKind fiveOfAKind = new FiveOfAKind();
         if (pair.isScorable(st)) {
             return pair.score(die1, die2, die3, die4, die5);
         } else {
@@ -14,8 +15,8 @@ public class BigDiceGame {
                 if (fullHouse.isScorable(st)) {
                     return fullHouse.score(die1, die2, die3, die4, die5);
                 } else {
-                    if (new FiveOfAKind().isScorable(st)) {
-                        return new FiveOfAKind().score(die1, die2, die3, die4, die5);
+                    if (fiveOfAKind.isScorable(st)) {
+                        return fiveOfAKind.score(die1, die2, die3, die4, die5);
                     }
                 }
             }
