@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class TwoPair {
-    public static int twoPairScore(int die1, int die2, int die3, int die4, int die5) {
+    public static int score(int die1, int die2, int die3, int die4, int die5) {
         var counts1 = new int[6];
         counts1[die1 - 1]++;
         counts1[die2 - 1]++;

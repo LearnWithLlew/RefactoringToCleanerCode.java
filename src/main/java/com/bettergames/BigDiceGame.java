@@ -13,7 +13,7 @@ public class BigDiceGame
 
             case TwoPair:
             {
-                return TwoPair.twoPairScore(die1, die2, die3, die4, die5);
+                return TwoPair.score(die1, die2, die3, die4, die5);
             }
 
             case FullHouse:
