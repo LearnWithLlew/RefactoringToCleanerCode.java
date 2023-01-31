@@ -1,6 +1,6 @@
 package com.bettergames;
 
-public class FullHouse {
+public class FullHouse implements Scorer {
     public int score(int die1, int die2, int die3, int die4, int die5) {
         int[] tallies;
         var _2 = false;
