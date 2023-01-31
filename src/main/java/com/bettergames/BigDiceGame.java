@@ -6,7 +6,7 @@ public class BigDiceGame
     {
         if (isPair(st)) {
             return new Pair().score(die1, die2, die3, die4, die5);
-        } else if (st == ScoringType.TwoPair) {
+        } else if (isTwoPair(st)) {
             return new TwoPair().score(die1, die2, die3, die4, die5);
         } else if (st == ScoringType.FullHouse) {
             return new FullHouse().score(die1, die2, die3, die4, die5);
@@ -15,6 +15,10 @@ public class BigDiceGame
         }
 
         return 0;
+    }
+
+    private static boolean isTwoPair(ScoringType st) {
+        return st == ScoringType.TwoPair;
     }
 
     private static boolean isPair(ScoringType st) {
