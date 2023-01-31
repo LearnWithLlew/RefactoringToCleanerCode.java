@@ -1,6 +1,7 @@
 package com.bettergames;
 
 public class FullHouse implements Scorer {
+    @Override
     public boolean isScorable(ScoringType st) {
         return st == ScoringType.FullHouse;
     }
