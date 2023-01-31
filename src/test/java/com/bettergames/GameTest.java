@@ -1,12 +1,14 @@
 package com.bettergames;
 
+import com.github.larseckart.tcr.FastTestCommitRevertMainExtension;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.core.Options;
 import org.approvaltests.reporters.intellij.IntelliJReporter;
+import org.approvaltests.testcommitrevert.FasterTestCommitRevertRunner;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(RevertOnFailure.class)
+@ExtendWith(FastTestCommitRevertMainExtension.class)
 public class GameTest {
 
     @Test
