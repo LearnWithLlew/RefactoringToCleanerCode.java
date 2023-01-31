@@ -6,7 +6,7 @@ public class BigDiceGame
     {
         if (new Pair().isScorable(st)) {
             return new Pair().score(die1, die2, die3, die4, die5);
-        } else if (TwoPair.isScorable(st)) {
+        } else if (new TwoPair().isScorable(st)) {
             return new TwoPair().score(die1, die2, die3, die4, die5);
         } else if (FullHouse.isScorable(st)) {
             return new FullHouse().score(die1, die2, die3, die4, die5);
