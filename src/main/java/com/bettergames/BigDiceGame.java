@@ -8,7 +8,7 @@ public class BigDiceGame
         {
             case Pair:
             {
-                return Pair.score(die1, die2, die3, die4, die5);
+                return new Pair().score(die1, die2, die3, die4, die5);
             }
 
             case TwoPair:
