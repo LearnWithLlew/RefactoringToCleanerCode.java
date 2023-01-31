@@ -13,7 +13,7 @@ public class BigDiceGame
 
             case TwoPair:
             {
-                return strawberryJam(die1, die2, die3, die4, die5);
+                return twoPairScore(die1, die2, die3, die4, die5);
             }
 
             case FullHouse:
@@ -90,7 +90,7 @@ public class BigDiceGame
         return 0;
     }
 
-    private static int strawberryJam(int die1, int die2, int die3, int die4, int die5) {
+    private static int twoPairScore(int die1, int die2, int die3, int die4, int die5) {
         var counts1 = new int[6];
         counts1[die1 - 1]++;
         counts1[die2 - 1]++;
