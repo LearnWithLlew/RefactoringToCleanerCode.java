@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class FullHouse implements Scorer {
-    public static boolean isFullHouse(ScoringType st) {
+    public static boolean isScorable(ScoringType st) {
         return st == ScoringType.FullHouse;
     }
 

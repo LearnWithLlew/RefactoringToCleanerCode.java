@@ -6,11 +6,11 @@ public class BigDiceGame
     {
         if (Pair.isScorable(st)) {
             return new Pair().score(die1, die2, die3, die4, die5);
-        } else if (TwoPair.isTwoPair(st)) {
+        } else if (TwoPair.isScorable(st)) {
             return new TwoPair().score(die1, die2, die3, die4, die5);
-        } else if (FullHouse.isFullHouse(st)) {
+        } else if (FullHouse.isScorable(st)) {
             return new FullHouse().score(die1, die2, die3, die4, die5);
-        } else if (FiveOfAKind.isFiveOfAKind(st)) {
+        } else if (FiveOfAKind.isScorable(st)) {
             return new FiveOfAKind().score(die1, die2, die3, die4, die5);
         }
 
