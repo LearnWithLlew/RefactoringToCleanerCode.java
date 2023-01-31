@@ -8,7 +8,7 @@ public class BigDiceGame
         {
             case Pair:
             {
-                return applesauce(die1, die2, die3, die4, die5);
+                return pairScore(die1, die2, die3, die4, die5);
             }
 
             case TwoPair:
@@ -116,7 +116,7 @@ public class BigDiceGame
         return 0;
     }
 
-    private static int applesauce(int die1, int die2, int die3, int die4, int die5) {
+    private static int pairScore(int die1, int die2, int die3, int die4, int die5) {
         final int value = 2;
         int[] tallies1;
         tallies1 = new int[6];
