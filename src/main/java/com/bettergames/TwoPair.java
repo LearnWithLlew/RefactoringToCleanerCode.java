@@ -1,6 +1,10 @@
 package com.bettergames;
 
 public class TwoPair implements Scorer {
+    public static boolean isTwoPair(ScoringType st) {
+        return st == ScoringType.TwoPair;
+    }
+
     public int score(int die1, int die2, int die3, int die4, int die5) {
         var counts1 = new int[6];
         counts1[die1 - 1]++;
