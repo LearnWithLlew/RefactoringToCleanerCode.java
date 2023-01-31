@@ -2,7 +2,7 @@ package com.bettergames;
 
 public class BigDiceGame
 {
-    public static int calculateScore(ScoringType st, int die1, int die2, int die3, int die4, int fifthDie)
+    public static int calculateScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
     {
         final int bigScore = 50;
         switch (st)
@@ -16,7 +16,7 @@ public class BigDiceGame
                 tallies1[die2 - 1]++;
                 tallies1[die3 - 1]++;
                 tallies1[die4 - 1]++;
-                tallies1[fifthDie - 1]++;
+                tallies1[die5 - 1]++;
                 for (var i = 6 - 1; i >= 0; i--)
                 {
                     if (tallies1[i] >= value)
@@ -35,7 +35,7 @@ public class BigDiceGame
                 counts1[die2 - 1]++;
                 counts1[die3 - 1]++;
                 counts1[die4 - 1]++;
-                counts1[fifthDie - 1]++;
+                counts1[die5 - 1]++;
                 var n = 0;
                 var score = 0;
                 for (var i = 0; i < 6; i += 1)
@@ -69,7 +69,7 @@ public class BigDiceGame
                 tallies[die2 - 1] += 1;
                 tallies[die3 - 1] += 1;
                 tallies[die4 - 1] += 1;
-                tallies[fifthDie - 1] += 1;
+                tallies[die5 - 1] += 1;
 
                 for (i = 0; i != 6; i += 1)
                 {
@@ -99,7 +99,7 @@ public class BigDiceGame
 
             case FiveOfAKind:
             {
-                int[] dice1 = {die1, die2, die3, die4, fifthDie};
+                int[] dice1 = {die1, die2, die3, die4, die5};
                 var counts2 = new int[6];
                 for (var die : dice1)
                 {
