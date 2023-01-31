@@ -8,16 +8,15 @@ public class BigDiceGame {
         FiveOfAKind fiveOfAKind = new FiveOfAKind();
         if (pair.isScorable(st)) {
             return pair.score(die1, die2, die3, die4, die5);
+        }
+        if (twoPair.isScorable(st)) {
+            return twoPair.score(die1, die2, die3, die4, die5);
         } else {
-            if (twoPair.isScorable(st)) {
-                return twoPair.score(die1, die2, die3, die4, die5);
+            if (fullHouse.isScorable(st)) {
+                return fullHouse.score(die1, die2, die3, die4, die5);
             } else {
-                if (fullHouse.isScorable(st)) {
-                    return fullHouse.score(die1, die2, die3, die4, die5);
-                } else {
-                    if (fiveOfAKind.isScorable(st)) {
-                        return fiveOfAKind.score(die1, die2, die3, die4, die5);
-                    }
+                if (fiveOfAKind.isScorable(st)) {
+                    return fiveOfAKind.score(die1, die2, die3, die4, die5);
                 }
             }
         }
