@@ -5,8 +5,12 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
+    commit-message:
+      prefix: "R  "
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "e  "
