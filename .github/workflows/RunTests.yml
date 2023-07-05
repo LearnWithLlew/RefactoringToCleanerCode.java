@@ -2,6 +2,7 @@ name:  Runtests
 
 on:
   push:
+  pull_request:
   repository_dispatch:
 
 jobs:
