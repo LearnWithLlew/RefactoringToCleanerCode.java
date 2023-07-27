@@ -1,7 +1,12 @@
 package com.bettergames;
 
 public class TwoPairScore {
-    static int calculateScore(int die1, int die2, int die3, int die4, int die5) {
+
+    static boolean isScore(ScoringType scoringType) {
+        return scoringType == ScoringType.TwoPair;
+    }
+
+    public int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         var counts1 = new int[6];
         counts1[die1 - 1]++;
         counts1[die2 - 1]++;
@@ -22,9 +27,5 @@ public class TwoPairScore {
         }
 
         return 0;
-    }
-
-    static boolean isScore(ScoringType scoringType) {
-        return scoringType == ScoringType.TwoPair;
     }
 }
