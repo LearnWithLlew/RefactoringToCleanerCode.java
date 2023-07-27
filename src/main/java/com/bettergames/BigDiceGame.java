@@ -5,8 +5,9 @@ public class BigDiceGame
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            if (new PairScore().isScore(scoringType)) {
-                return new PairScore().calculateScore(die1, die2, die3, die4, die5);
+            PairScore scorer = new PairScore();
+            if (scorer.isScore(scoringType)) {
+                return scorer.calculateScore(die1, die2, die3, die4, die5);
             }
         }
         if (new TwoPairScore().isScore(scoringType)) {
