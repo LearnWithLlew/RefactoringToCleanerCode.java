@@ -1,6 +1,8 @@
 package com.bettergames;
 
+import com.github.larseckart.tcr.ArlosGitNotation2Prompt;
 import com.github.larseckart.tcr.FastTestCommitRevertMainExtension;
+import com.github.larseckart.tcr.TestCommitRevertExtension;
 import com.github.larseckart.tcr.TestCommitRevertMainExtension;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.core.Options;
@@ -8,7 +10,7 @@ import org.approvaltests.reporters.intellij.IntelliJReporter;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(TestCommitRevertMainExtension.class)
+@ExtendWith(TestCommitRevertExtension.class)
 public class GameTest {
 
     @Test

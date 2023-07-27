@@ -27,7 +27,8 @@
       <groupId>com.larseckart</groupId>
       <artifactId>junit-tcr-extensions</artifactId>
       <version>0.0.1</version>
-      <scope>test</scope>
+      <scope>system</scope>
+      <systemPath>/Users/llewellynfalco/Github/RefactoringToCleanerCode.java/lib/tcr-extension.jar</systemPath>
     </dependency>
   </dependencies>
 
