@@ -2,7 +2,7 @@ package com.bettergames;
 
 public class PairScore {
 
-    static boolean isScore(ScoringType scoringType) {
+    public boolean isScore(ScoringType scoringType) {
         return scoringType == ScoringType.Pair;
     }
 
