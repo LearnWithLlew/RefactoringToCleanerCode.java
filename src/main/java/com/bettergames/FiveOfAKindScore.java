@@ -18,4 +18,8 @@ public class FiveOfAKindScore {
 
         return 0;
     }
+
+    static boolean isApplesauce3(ScoringType scoringType) {
+        return scoringType == ScoringType.FiveOfAKind;
+    }
 }

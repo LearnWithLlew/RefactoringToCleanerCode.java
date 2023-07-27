@@ -10,15 +10,11 @@ public class BigDiceGame
             return TwoPairScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (FullHouseScore.isFullHouse(scoringType)) {
             return FullHouseScore.calculateScore(die1, die2, die3, die4, die5);
-        } else if (isApplesauce3(scoringType)) {
+        } else if (FiveOfAKindScore.isApplesauce3(scoringType)) {
             return FiveOfAKindScore.calculateScore(die1, die2, die3, die4, die5);
         }
 
         return 0;
-    }
-
-    private static boolean isApplesauce3(ScoringType scoringType) {
-        return scoringType == ScoringType.FiveOfAKind;
     }
 
 }
