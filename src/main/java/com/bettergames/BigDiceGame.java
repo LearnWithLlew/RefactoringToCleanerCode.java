@@ -8,7 +8,7 @@ public class BigDiceGame
             return PairScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (TwoPairScore.isApplesauce2(scoringType)) {
             return TwoPairScore.calculateScore(die1, die2, die3, die4, die5);
-        } else if (isFullHouse(scoringType)) {
+        } else if (FullHouseScore.isFullHouse(scoringType)) {
             return FullHouseScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (isApplesauce3(scoringType)) {
             return FiveOfAKindScore.calculateScore(die1, die2, die3, die4, die5);
@@ -19,10 +19,6 @@ public class BigDiceGame
 
     private static boolean isApplesauce3(ScoringType scoringType) {
         return scoringType == ScoringType.FiveOfAKind;
-    }
-
-    private static boolean isFullHouse(ScoringType scoringType) {
-        return scoringType == ScoringType.FullHouse;
     }
 
 }
