@@ -1,20 +1,19 @@
 package com.bettergames;
 
+import java.util.Arrays;
+
 public class BigDiceGame
 {
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
             DiceScorer[] scorer = getScoringTypes();
-            for (DiceScorer diceScorer : scorer) {
-                if (diceScorer.isScore(scoringType)) {
-                    return diceScorer.calculateScore(die1, die2, die3, die4, die5);
-                }
-
-            }
+            return Arrays.stream(scorer)
+                    .filter(diceScorer -> diceScorer.isScore(scoringType))
+                    .findFirst().map(diceScorer -> diceScorer.calculateScore(die1, die2, die3, die4, die5))
+                    .orElse(0);
         }
 
-        return 0;
     }
 
     private static DiceScorer[] getScoringTypes() {
