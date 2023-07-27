@@ -1,7 +1,7 @@
 package com.bettergames;
 
 public class FullHouseScore {
-    static int applesauce3(int die1, int die2, int die3, int die4, int die5) {
+    static int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         int[] tallies;
         var _2 = false;
         int i;
