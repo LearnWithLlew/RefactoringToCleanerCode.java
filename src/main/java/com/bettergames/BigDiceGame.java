@@ -6,8 +6,11 @@ public class BigDiceGame
     {
         {
             var scorer = new DiceScorer[]{new PairScore()};
-            if (scorer[0].isScore(scoringType)) {
-                return scorer[0].calculateScore(die1, die2, die3, die4, die5);
+            for (DiceScorer diceScorer : scorer) {
+                if (diceScorer.isScore(scoringType)) {
+                    return diceScorer.calculateScore(die1, die2, die3, die4, die5);
+                }
+
             }
         }
         if (new TwoPairScore().isScore(scoringType)) {
