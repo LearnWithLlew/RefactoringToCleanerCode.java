@@ -8,13 +8,17 @@ public class BigDiceGame
             return PairScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (isApplesauce2(scoringType)) {
             return TwoPairScore.calculateScore(die1, die2, die3, die4, die5);
-        } else if (scoringType == ScoringType.FullHouse) {
+        } else if (isFullHouse(scoringType)) {
             return FullHouseScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (scoringType == ScoringType.FiveOfAKind) {
             return FiveOfAKindScore.calculateScore(die1, die2, die3, die4, die5);
         }
 
         return 0;
+    }
+
+    private static boolean isFullHouse(ScoringType scoringType) {
+        return scoringType == ScoringType.FullHouse;
     }
 
     private static boolean isApplesauce2(ScoringType scoringType) {
