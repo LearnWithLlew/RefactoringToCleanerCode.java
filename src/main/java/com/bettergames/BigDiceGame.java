@@ -4,7 +4,6 @@ public class BigDiceGame
 {
     public static int calculateScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
     {
-        final int bigScore = 50;
         switch (st)
         {
             case Pair:
@@ -30,6 +29,7 @@ public class BigDiceGame
                 {
                     if (counts2[i1] == 5)
                     {
+                        int bigScore = 50;
                         return bigScore;
                     }
                 }
