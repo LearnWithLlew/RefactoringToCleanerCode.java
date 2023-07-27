@@ -24,7 +24,7 @@ public class TwoPairScore {
         return 0;
     }
 
-    static boolean isApplesauce2(ScoringType scoringType) {
+    static boolean isScore(ScoringType scoringType) {
         return scoringType == ScoringType.TwoPair;
     }
 }

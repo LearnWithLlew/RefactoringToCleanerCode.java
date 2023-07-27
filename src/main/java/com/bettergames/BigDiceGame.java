@@ -6,7 +6,7 @@ public class BigDiceGame
     {
         if (PairScore.isScore(scoringType)) {
             return PairScore.calculateScore(die1, die2, die3, die4, die5);
-        } else if (TwoPairScore.isApplesauce2(scoringType)) {
+        } else if (TwoPairScore.isScore(scoringType)) {
             return TwoPairScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (FullHouseScore.isFullHouse(scoringType)) {
             return FullHouseScore.calculateScore(die1, die2, die3, die4, die5);
