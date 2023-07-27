@@ -19,7 +19,7 @@ public class PairScore {
         return 0;
     }
 
-    static boolean isApplesauce(ScoringType scoringType) {
+    static boolean isScore(ScoringType scoringType) {
         return scoringType == ScoringType.Pair;
     }
 }
