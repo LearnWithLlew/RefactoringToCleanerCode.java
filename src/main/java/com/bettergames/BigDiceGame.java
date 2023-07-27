@@ -5,9 +5,9 @@ public class BigDiceGame
     public static int calculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            var scorer = new PairScore();
-            if (scorer.isScore(scoringType)) {
-                return scorer.calculateScore(die1, die2, die3, die4, die5);
+            var scorer = new DiceScorer[]{new PairScore()};
+            if (scorer[0].isScore(scoringType)) {
+                return scorer[0].calculateScore(die1, die2, die3, die4, die5);
             }
         }
         if (new TwoPairScore().isScore(scoringType)) {
