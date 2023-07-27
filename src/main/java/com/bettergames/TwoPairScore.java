@@ -1,6 +1,6 @@
 package com.bettergames;
 
-public class TwoPairScore {
+public class TwoPairScore implements DiceScorer {
 
     public boolean isScore(ScoringType scoringType) {
         return scoringType == ScoringType.TwoPair;
