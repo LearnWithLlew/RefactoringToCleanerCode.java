@@ -11,7 +11,7 @@ public class BigDiceGame
         } else if (scoringType == ScoringType.FullHouse) {
             return FullHouseScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (scoringType == ScoringType.FiveOfAKind) {
-            return FiveOfAKindScore.applesauce4(die1, die2, die3, die4, die5);
+            return FiveOfAKindScore.calculateScore(die1, die2, die3, die4, die5);
         }
 
         return 0;
