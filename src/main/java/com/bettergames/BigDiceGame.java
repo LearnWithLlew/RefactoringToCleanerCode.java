@@ -6,7 +6,7 @@ public class BigDiceGame
     {
         if (isApplesauce(scoringType)) {
             return PairScore.calculateScore(die1, die2, die3, die4, die5);
-        } else if (scoringType == ScoringType.TwoPair) {
+        } else if (isApplesauce2(scoringType)) {
             return TwoPairScore.calculateScore(die1, die2, die3, die4, die5);
         } else if (scoringType == ScoringType.FullHouse) {
             return FullHouseScore.calculateScore(die1, die2, die3, die4, die5);
@@ -15,6 +15,10 @@ public class BigDiceGame
         }
 
         return 0;
+    }
+
+    private static boolean isApplesauce2(ScoringType scoringType) {
+        return scoringType == ScoringType.TwoPair;
     }
 
     private static boolean isApplesauce(ScoringType scoringType) {
