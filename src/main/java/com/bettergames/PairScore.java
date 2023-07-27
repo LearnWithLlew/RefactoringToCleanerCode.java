@@ -1,11 +1,13 @@
 package com.bettergames;
 
-public class PairScore {
+public class PairScore implements DiceScorer {
 
+    @Override
     public boolean isScore(ScoringType scoringType) {
         return scoringType == ScoringType.Pair;
     }
 
+    @Override
     public int calculateScore(int die1, int die2, int die3, int die4, int die5) {
         final int value = 2;
         int[] tallies1;
