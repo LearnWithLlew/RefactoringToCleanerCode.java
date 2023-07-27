@@ -19,7 +19,7 @@ public class FiveOfAKindScore {
         return 0;
     }
 
-    static boolean isScore(ScoringType scoringType) {
+    public boolean isScore(ScoringType scoringType) {
         return scoringType == ScoringType.FiveOfAKind;
     }
 }

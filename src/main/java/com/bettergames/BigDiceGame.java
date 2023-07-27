@@ -10,7 +10,7 @@ public class BigDiceGame
             return new TwoPairScore().calculateScore(die1, die2, die3, die4, die5);
         } else if (new FullHouseScore().isScore(scoringType)) {
             return new FullHouseScore().calculateScore(die1, die2, die3, die4, die5);
-        } else if (FiveOfAKindScore.isScore(scoringType)) {
+        } else if (new FiveOfAKindScore().isScore(scoringType)) {
             return FiveOfAKindScore.calculateScore(die1, die2, die3, die4, die5);
         }
 
